@@ -32,6 +32,10 @@ public class GestorCoches {
         c1.setMotor(new Combustion(1,100));
         c2.setMotor(new Electrico(2,120));
         c3.setMotor(new Combustion(3,150));
+
+
+
+
 //        c1.nRuedas = 5;
 //        c2.nRuedas = 3;
         Coche.nRuedas = 4;
