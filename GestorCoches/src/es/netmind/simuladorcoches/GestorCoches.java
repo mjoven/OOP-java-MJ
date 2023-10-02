@@ -1,6 +1,8 @@
 package es.netmind.simuladorcoches;
 
 import es.netmind.simuladorcoches.modelos.coches.*;
+import es.netmind.simuladorcoches.modelos.motores.Combustion;
+import es.netmind.simuladorcoches.modelos.motores.Electrico;
 
 public class GestorCoches {
 
@@ -27,6 +29,9 @@ public class GestorCoches {
         ICoche c3 = new SUV("Seat", "SUV", 100, 1);
         c3.arrancar();
 
+        c1.setMotor(new Combustion(1,100));
+        c2.setMotor(new Electrico(2,120));
+        c3.setMotor(new Combustion(3,150));
 //        c1.nRuedas = 5;
 //        c2.nRuedas = 3;
         Coche.nRuedas = 4;
